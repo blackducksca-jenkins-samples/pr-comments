@@ -2,10 +2,10 @@
 
 ## Build Information
 - **Job Name:** `MBP_Github_BlackduckSca_PR_Comments/main`
-- **Build Number:** #2
+- **Build Number:** #3
 - **Build Status:** 🟢 **SUCCESS**
-- **Duration:** 1 min 27 sec and counting
-- **Timestamp:** 2025-11-11 18:32:40 UTC
+- **Duration:** 1 min 19 sec and counting
+- **Timestamp:** 2025-11-11 18:57:20 UTC
 
 ---
 
@@ -14,7 +14,7 @@
 ```
 Branch indexing
 Connecting to https://api.github.com using madhusud@blackduck.com/****** (Github_Username_PAT)
-Obtained nodejs-npm/Jenkinsfile from 31879c94fab0de6c6302c8c5afc5bb6e96e5b681
+Obtained nodejs-npm/Jenkinsfile from 69c91bdffbf22cdc6ed69126e1d72a4799c5800e
 Loading library blackduck-logs-publisher@main
 Attempting to resolve main from remote references...
  > git --version # timeout=10
@@ -40,30 +40,27 @@ Commit message: "Phase 3 - 2"
  > git rev-list --no-walk e969196a63b1be83b84541b022f7aa52928bd5e5 # timeout=10
 [Pipeline] Start of Pipeline
 [Pipeline] node
-Running on mac-sh in /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2
+Running on mac-sh in /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main
 [Pipeline] {
 [Pipeline] stage
 [Pipeline] { (Declarative: Checkout SCM)
 [Pipeline] checkout
 The recommended git tool is: NONE
 using credential Github_Username_PAT
-Cloning the remote Git repository
-Cloning with configured refspecs honoured and without tags
-Cloning repository https://github.com/blackducksca-jenkins-samples/pr-comments.git
- > git init /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2 # timeout=10
+Fetching changes from the remote Git repository
+Fetching without tags
+ > git rev-parse --resolve-git-dir /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/.git # timeout=10
+ > git config remote.origin.url https://github.com/blackducksca-jenkins-samples/pr-comments.git # timeout=10
 Fetching upstream changes from https://github.com/blackducksca-jenkins-samples/pr-comments.git
  > git --version # timeout=10
  > git --version # 'git version 2.39.5 (Apple Git-154)'
 using GIT_ASKPASS to set credentials Github_Username_PAT
  > git fetch --no-tags --force --progress -- https://github.com/blackducksca-jenkins-samples/pr-comments.git +refs/heads/main:refs/remotes/origin/main # timeout=10
-Avoid second fetch
-Checking out Revision 31879c94fab0de6c6302c8c5afc5bb6e96e5b681 (main)
-Commit message: "Create Jenkinsfile"
-First time build. Skipping changelog.
- > git config remote.origin.url https://github.com/blackducksca-jenkins-samples/pr-comments.git # timeout=10
- > git config --add remote.origin.fetch +refs/heads/main:refs/remotes/origin/main # timeout=10
+Checking out Revision 69c91bdffbf22cdc6ed69126e1d72a4799c5800e (main)
+Commit message: "Jenkins log upload - Build #2"
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 31879c94fab0de6c6302c8c5afc5bb6e96e5b681 # timeout=10
+ > git checkout -f 69c91bdffbf22cdc6ed69126e1d72a4799c5800e # timeout=10
+ > git rev-list --no-walk 31879c94fab0de6c6302c8c5afc5bb6e96e5b681 # timeout=10
 [Pipeline] }
 [Pipeline] // stage
 [Pipeline] withEnv
@@ -75,7 +72,7 @@ First time build. Skipping changelog.
 [Pipeline] echo
 JOB_NAME: MBP_Github_BlackduckSca_PR_Comments/main
 [Pipeline] dir
-Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm
+Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm
 [Pipeline] {
 [Pipeline] sh
 + node --version
@@ -86,54 +83,8 @@ v22.16.0
 [Pipeline] sh
 + npm install
 npm warn deprecated fsevents@1.2.9: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
-npm warn deprecated set-value@2.0.0: Critical bug fixed in v3.0.1, please upgrade to the latest version.
-npm warn deprecated mixin-deep@1.3.1: Critical bug fixed in v2.0.1, please upgrade to the latest version.
-npm warn deprecated ini@1.3.5: Please update to ini >=1.3.6 to avoid a prototype pollution issue
-npm warn deprecated set-value@0.4.3: Critical bug fixed in v3.0.1, please upgrade to the latest version.
-npm warn deprecated path-is-absolute@2.0.0: This package is no longer relevant as Node.js 0.12 is unmaintained.
-npm warn deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
-npm warn deprecated har-validator@5.1.3: this library is no longer supported
-npm warn deprecated to-iso-string@0.0.2: to-iso-string has been deprecated, use @segment/to-iso-string instead.
-npm warn deprecated cryptiles@2.0.5: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
-npm warn deprecated bcrypt-nodejs@0.0.3: bcrypt-nodejs is no longer actively maintained. Please use bcrypt or bcryptjs. See https://github.com/kelektiv/node.bcrypt.js/wiki/bcrypt-vs-brypt.js to learn more about these two options
-npm warn deprecated cryptiles@0.2.2: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated source-map-url@0.4.0: See https://github.com/lydell/source-map-url#deprecated
-npm warn deprecated boom@0.4.2: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm warn deprecated debug@3.2.6: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
-npm warn deprecated chokidar@2.1.6: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
-npm warn deprecated boom@2.10.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated sntp@0.2.4: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
-npm warn deprecated minimatch@0.3.0: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue
-npm warn deprecated chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
-npm warn deprecated sntp@1.0.9: This module moved to @hapi/sntp. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
-npm warn deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
-npm warn deprecated request@2.36.0: request has been deprecated, see https://github.com/request/request/issues/3142
-npm warn deprecated mkdirp@0.3.0: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
-npm warn deprecated tough-cookie@2.2.2: ReDoS vulnerability parsing Set-Cookie https://nodesecurity.io/advisories/130
-npm warn deprecated hoek@0.9.1: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated node-uuid@1.4.8: Use uuid module instead
-npm warn deprecated node-uuid@1.4.8: Use uuid module instead
-npm warn deprecated uuid@3.3.2: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
-npm warn deprecated source-map-resolve@0.5.2: See https://github.com/lydell/source-map-resolve#deprecated
-npm warn deprecated har-validator@2.0.6: this library is no longer supported
-npm warn deprecated mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
-npm warn deprecated hoek@2.16.3: This version has been deprecated in accordance with the hapi support policy (hapi.im/support). Please upgrade to the latest version to get the best features, bug fixes, and security patches. If you are unable to upgrade at this time, paid support is available for older versions (hapi.im/commercial).
-npm warn deprecated request@2.79.0: request has been deprecated, see https://github.com/request/request/issues/3142
-npm warn deprecated request@2.88.0: request has been deprecated, see https://github.com/request/request/issues/3142
-npm warn deprecated request@2.67.0: request has been deprecated, see https://github.com/request/request/issues/3142
-npm warn deprecated readdir-scoped-modules@1.0.2: This functionality has been moved to @npmcli/fs
-npm warn deprecated hawk@1.0.0: This module moved to @hapi/hawk. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
-npm warn deprecated hawk@3.1.3: This module moved to @hapi/hawk. Please make sure to switch over as this distribution is no longer supported and may contain bugs and critical security issues.
-npm warn deprecated jade@0.26.3: Jade has been renamed to pug, please install the latest version of pug instead of jade
-npm warn deprecated swig@1.4.2: This package is no longer maintained
-npm warn deprecated bson@1.0.9: Fixed a critical issue with BSON serialization documented in CVE-2019-2391, see https://bit.ly/2KcpXdo for more details
-npm warn deprecated nodeunit@0.9.5: you are strongly encouraged to use other testing options
 
-added 962 packages, and audited 1412 packages in 10s
+up to date, audited 1412 packages in 10s
 
 32 packages are looking for funding
   run `npm fund` for details
@@ -161,14 +112,14 @@ Run `npm audit` for details.
 [Pipeline] script
 [Pipeline] {
 [Pipeline] dir
-Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm
+Running in /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm
 [Pipeline] {
 [Pipeline] echo
 DETECT_PROJECT_NAME will be set to: MBP_Github_BlackduckSca_PR_Comments
 [Pipeline] withEnv
 [Pipeline] {
 [Pipeline] echo
-Workspace is /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2
+Workspace is /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main
 [Pipeline] security_scan
 **************************** START EXECUTION OF BLACK DUCK SECURITY SCAN ****************************
 [Security Scan] INFO: Jenkins Job name: MBP_Github_BlackduckSca_PR_Comments
@@ -192,176 +143,180 @@ Workspace is /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_
 [Security Scan] INFO: Jenkins Job name: MBP_Github_BlackduckSca_PR_Comments
 [Security Scan] INFO: Black Duck SCA PR Comment is ignored for non pull request scan
 [Security Scan] INFO: Jenkins Job name: MBP_Github_BlackduckSca_PR_Comments
-[Security Scan] INFO: Executable command line arguments: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm/bridge-cli --stage blackducksca --input /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/blackducksca_input16845785824296117340.json --out .bridge/output/scan_info_out.json
+[Security Scan] INFO: Executable command line arguments: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm/bridge-cli --stage blackducksca --input /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/blackducksca_input9543467212210574473.json --out .bridge/output/scan_info_out.json
 
 ******************************* START EXECUTION OF BRIDGE CLI *******************************
-2025-11-11 18:31:37.4317 IST [Bridge CLI] INFO: Using cache directory: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm
-2025-11-11 18:31:37.4423 IST [Bridge CLI] INFO: Found version "3.0.143" in registry for workflow "blackducksca", trying to load it from local cache
-2025-11-11 18:31:37.5331 IST [Bridge CLI] INFO: Input Resources:
-2025-11-11 18:31:37.5332 IST [Bridge CLI] INFO: resource = value [source]
-2025-11-11 18:31:37.5332 IST [Bridge CLI] INFO: ------------------------------------------------------------
-2025-11-11 18:31:37.5332 IST [Bridge CLI] INFO: blackducksca.token = ***************************************** [blackducksca_input16845785824296117340.json]
-2025-11-11 18:31:37.5332 IST [Bridge CLI] INFO: blackducksca.url = https://saastest.app.blackduck.com [blackducksca_input16845785824296117340.json]
-2025-11-11 18:31:37.5332 IST [Bridge CLI] INFO: blackducksca.waitForScan = true [blackducksca_input16845785824296117340.json]
-2025-11-11 18:31:37.5332 IST [Bridge CLI] INFO: network.airgap = false [blackducksca_input16845785824296117340.json]
-2025-11-11 18:31:37.5332 IST [Bridge CLI] INFO: ------------------------------------------------------------
-2025-11-11 18:31:37.5332 IST [Bridge CLI] INFO: Starting adapters for stage blackducksca
-2025-11-11 18:31:37.5335 IST [Bridge CLI] INFO: Starting Adapter: Blackduck SCA Controller
-2025-11-11 18:31:37.5380 IST [Bridge CLI] INFO: Starting Adapter: Default Black Duck SCA Scan Mode
-2025-11-11 18:31:37.5418 IST [Bridge CLI] INFO: Starting Adapter: Check pull request
-2025-11-11 18:31:37.5644 IST [Check pull request] INFO: Provided value for resource 'environment.scan.pull'
-2025-11-11 18:31:37.5646 IST [Check pull request] INFO: Adapter finished
-2025-11-11 18:31:37.5829 IST [Default Black Duck SCA Scan Mode] INFO: Provided value for resource 'blackducksca.scan.full'
-2025-11-11 18:31:37.5831 IST [Default Black Duck SCA Scan Mode] INFO: Adapter finished
-2025-11-11 18:31:38.3806 IST [Blackduck SCA Controller] INFO: Found Black Duck SCA Detect jar file "detect-11.0.0.jar" in "/Users/madhusud/.blackduck/bridge/tools/blackduck-detect/11.0.0"
-2025-11-11 18:31:38.4014 IST [Blackduck SCA Controller] INFO: Provided value for resource 'detect.execution.path'
-2025-11-11 18:31:38.4015 IST [Bridge CLI] INFO: Starting adapters for stage blackducksca-detect
-2025-11-11 18:31:38.4015 IST [Bridge CLI] INFO: Starting adapters for stage scm
-2025-11-11 18:31:38.4015 IST [Bridge CLI] INFO: Starting adapters for stage blackducksca-post-processing
-2025-11-11 18:31:38.4035 IST [Bridge CLI] INFO: Starting Adapter: Blackduck SCA Results
-2025-11-11 18:31:38.4036 IST [Bridge CLI] INFO: Starting Adapter: Blackduck SCA Detect Execution
-2025-11-11 18:31:38.4036 IST [Bridge CLI] INFO: Starting Adapter: SCM Checker
-2025-11-11 18:31:38.4036 IST [Bridge CLI] INFO: Starting Adapter: Detect Component Locator
-2025-11-11 18:31:38.4041 IST [Blackduck SCA Controller] INFO: Adapter finished
-2025-11-11 18:31:38.4577 IST [Blackduck SCA Detect Execution] INFO: Running command /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java -jar /Users/madhusud/.blackduck/bridge/tools/blackduck-detect/11.0.0/detect-11.0.0.jar --detect.cleanup=false --detect.bdio.file.name=scan --detect.bdio.output.path=/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/bdio/blackduck_artifact --detect.output.path=/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect --blackduck.offline.mode=false --blackduck.url=https://saastest.app.blackduck.com --blackduck.api.token= --detect.wait.for.results=true --detect.blackduck.scan.mode=INTELLIGENT
-2025-11-11 18:31:38.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detect-Self-Updater:  Checking https://saastest.app.blackduck.com/api/tools/detect API for centrally managed Detect version to download to /Users/madhusud/tmp.
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] WARNING: --- Detect-Self-Updater:  Unable to download jar from https://saastest.app.blackduck.com/api/tools/detect.
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] WARNING: --- Detect-Self-Updater:  Response code from https://saastest.app.blackduck.com/api/tools/detect was: 400 Bad Request
-2025-11-11 18:31:41.7338 IST [Blackduck SCA Detect Execution] INFO: ______     _            _
-2025-11-11 18:31:41.7338 IST [Blackduck SCA Detect Execution] INFO: |  _  \   | |          | |
-2025-11-11 18:31:41.7338 IST [Blackduck SCA Detect Execution] INFO: | | | |___| |_ ___  ___| |_
-2025-11-11 18:31:41.7339 IST [Blackduck SCA Detect Execution] INFO: | | | / _ \ __/ _ \/ __| __|
-2025-11-11 18:31:41.7339 IST [Blackduck SCA Detect Execution] INFO: | |/ /  __/ ||  __/ (__| |_
-2025-11-11 18:31:41.7339 IST [Blackduck SCA Detect Execution] INFO: |___/ \___|\__\___|\___|\__|
-2025-11-11 18:31:41.7339 IST [Blackduck SCA Detect Execution] INFO: 
-2025-11-11 18:31:41.8083 IST [Blackduck SCA Detect Execution] INFO: 
-2025-11-11 18:31:41.8084 IST [Blackduck SCA Detect Execution] INFO: Detect Version: 11.0.0
-2025-11-11 18:31:41.8084 IST [Blackduck SCA Detect Execution] INFO: 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Current property values:
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- --property = value [notes]
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ------------------------------------------------------------
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- blackduck.api.token = **************************************************************************************************** [cmd] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- blackduck.offline.mode = false [cmd] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- blackduck.url = https://saastest.app.blackduck.com [cmd] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.bdio.file.name = scan [cmd] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.bdio.output.path = /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/bdio/blackduck_artifact [cmd] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.blackduck.scan.mode = INTELLIGENT [cmd] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.cleanup = false [cmd] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.excluded.directories = /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge [env] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.output.path = /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect [cmd] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.project.name = MBP_Github_BlackduckSca_PR_Comments [env] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.wait.for.results = true [cmd] 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ------------------------------------------------------------
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detect build date: 2025-10-30
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Source directory: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Output directory: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Run directory: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-01-41-802
-2025-11-11 18:31:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:31:47.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Successfully connected to Black Duck SCA (version 2025.7.1)!
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Docker tool.
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Docker actions finished.
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Bazel tool.
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Bazel actions finished.
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Detectors tool.
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Searching for detectors.
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Evaluating detectors. This may take a while.
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ======================================================================================================
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detector Report
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ======================================================================================================
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 	/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm (depth 0)
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 		NPM Package Lock: SUCCESS
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 			Found file: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/package-lock.json
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 			Found file: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/package.json
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detectors actions finished.
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Project name: MBP_Github_BlackduckSca_PR_Comments
-2025-11-11 18:31:48.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Project version: 1.3.0
-2025-11-11 18:31:51.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Successfully completed package manager scan of file: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/bdio/blackduck_artifact/scan.bdio
-2025-11-11 18:31:53.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Starting the codelocation file uploads.
-2025-11-11 18:31:57.0000 IST [Blackduck SCA Detect Execution][pool-1-thread-1] INFO: --- Try #1 for task bdio upload (elapsed: 00:00:00.000)...complete!
-2025-11-11 18:31:57.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Completed the codelocation file uploads.
-2025-11-11 18:31:57.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:31:57.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Signature Scanner tool.
-2025-11-11 18:31:57.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- No metadata file exists, assuming this is new installation and the signature scanner should be downloaded.
-2025-11-11 18:32:00.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Downloading the Black Duck Signature Scanner.
-2025-11-11 18:32:00.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- If the Signature Scanner on your Black Duck server has changed, the contents of /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/tools/Black_Duck_Scan_Installation may change which could involve deleting files - please do not place items in the expansion directory as this directory is assumed to be under blackduck-common control.
-2025-11-11 18:32:10.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Black Duck Signature Scanner downloaded successfully.
-2025-11-11 18:32:10.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- The Black Duck Signature Scanner downloaded/found successfully: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/tools
-2025-11-11 18:32:10.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- No scan targets provided - registering the source path /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm to scan
-2025-11-11 18:32:11.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Starting the Black Duck Signature Scan commands.
-2025-11-11 18:32:11.0000 IST [Blackduck SCA Detect Execution][pool-3-thread-1] INFO: --- Black Duck CLI command: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/tools/Black_Duck_Scan_Installation/scan.cli-1.0.6/jre/Contents/Home/bin/java -Done-jar.silent=true -Done-jar.jar.path=/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/tools/Black_Duck_Scan_Installation/scan.cli-1.0.6/lib/cache/scan.cli.impl-standalone.jar -Xmx4096m -jar /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/tools/Black_Duck_Scan_Installation/scan.cli-1.0.6/lib/scan.cli-1.0.6-standalone.jar --no-prompt --scheme https --host saastest.app.blackduck.com --port 443 -v --logDir /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-01-41-802/scan/BlackDuckScanOutput/2025-11-11_13-02-11-928_1 --statusWriteDir /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-01-41-802/scan/BlackDuckScanOutput/2025-11-11_13-02-11-928_1 --project MBP_Github_BlackduckSca_PR_Comments --release 1.3.0 --name nodejs-npm/MBP_Github_BlackduckSca_PR_Comments/1.3.0 signature --exclude /node_modules/ --exclude /.bridge/ --scass-scan /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][pool-3-thread-1] INFO: --- 
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][pool-3-thread-1] INFO: --- Black Duck Signature Scanner return code: 0
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][pool-3-thread-1] INFO: --- Signature Scanner log output directory: '/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-01-41-802/scan/BlackDuckScanOutput/2025-11-11_13-02-11-928_1'
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Completed the Black Duck Signature Scan commands.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Signature Scanner actions finished.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Binary Scanner tool.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Binary scanner found nothing to upload.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Binary Scanner actions finished.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Container Scanner tool.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- No detect.container.scan.file.path property was provided. Skipping container scan.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Container Scanner actions finished.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Vulnerability Impact Analysis tool will not be run.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- IaC Scanner tool will not be run.
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
-2025-11-11 18:32:26.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #1 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/3706d390-ac81-4f72-b97a-316efc3cdb89 (elapsed: 00:00:00.000)...not done yet, waiting 1 seconds and trying again...
-2025-11-11 18:32:28.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #2 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/3706d390-ac81-4f72-b97a-316efc3cdb89 (elapsed: 00:00:01.735)...not done yet, waiting 2 seconds and trying again...
-2025-11-11 18:32:31.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #3 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/3706d390-ac81-4f72-b97a-316efc3cdb89 (elapsed: 00:00:04.497)...not done yet, waiting 3 seconds and trying again...
-2025-11-11 18:32:35.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #4 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/3706d390-ac81-4f72-b97a-316efc3cdb89 (elapsed: 00:00:08.245)...complete!
-2025-11-11 18:32:35.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #1 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/3fa6e2a7-d964-48aa-bc1f-d56080a076cc (elapsed: 00:00:00.000)...complete!
-2025-11-11 18:32:35.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Checking to see if Detect should check policy for violations.
-2025-11-11 18:32:36.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:36.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:36.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Creating status file: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-01-41-802/status/status.json
-2025-11-11 18:32:36.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:36.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Skipping cleanup, it is disabled.
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ======== Detect Result ========
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Black Duck SCA Project BOM: https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/components
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ======== Detect Status ========
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- NPM: SUCCESS
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Signature scan / Snippet scan on /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main@2/nodejs-npm: SUCCESS
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Overall Status: SUCCESS - Detect exited successfully.
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ===============================
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
-2025-11-11 18:32:37.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detect duration: 00h 00m 58s 331ms
-2025-11-11 18:32:37.2617 IST [Blackduck SCA Detect Execution] INFO: Provided value for resource 'detect.completed'
-2025-11-11 18:32:37.2623 IST [Blackduck SCA Detect Execution] INFO: Provided value for resource 'detect.results.path'
-2025-11-11 18:32:37.2651 IST [Blackduck SCA Detect Execution] INFO: Adapter finished
-2025-11-11 18:32:37.3446 IST [Blackduck SCA Results] INFO: Skipping Blackduck SCA issues retrieval as "blackducksca.fixpr.enabled" is configured to false
-2025-11-11 18:32:37.3534 IST [Blackduck SCA Results] INFO: Adapter finished
-2025-11-11 18:32:37.4289 IST [SCM Checker] INFO: Provided value for resource 'jenkins.enabled'
-2025-11-11 18:32:37.4289 IST [Bridge CLI] INFO: Starting adapters for stage blackducksca-policy-violations-fetcher
-2025-11-11 18:32:37.4294 IST [Bridge CLI] INFO: Starting Adapter: Blackduck SCA Policy Violations Fetcher
-2025-11-11 18:32:37.4296 IST [SCM Checker] INFO: Adapter finished
-2025-11-11 18:32:37.4669 IST [Detect Component Locator] INFO: skipping fix pull requests creation as "blackducksca.fixpr.enabled" is configured to false
-2025-11-11 18:32:37.4725 IST [Detect Component Locator] INFO: Adapter finished
-2025-11-11 18:32:37.5316 IST [Blackduck SCA Policy Violations Fetcher] INFO: Detected Intelligent scan, will fetch Intelligent scan policy violations data
-2025-11-11 18:32:38.5418 IST [Blackduck SCA Policy Violations Fetcher] INFO: Bearer token retrieved successfully
-2025-11-11 18:32:38.8651 IST [Blackduck SCA Policy Violations Fetcher] INFO: Project data retrieved successfully
-2025-11-11 18:32:39.2048 IST [Blackduck SCA Policy Violations Fetcher] INFO: Version data retrieved successfully
-2025-11-11 18:32:39.5217 IST [Blackduck SCA Policy Violations Fetcher] INFO: No policy violations detected
-2025-11-11 18:32:39.8314 IST [Blackduck SCA Policy Violations Fetcher] INFO: Provided value for resource 'blackducksca.projectBomUrl'
-2025-11-11 18:32:39.8319 IST [Blackduck SCA Policy Violations Fetcher] INFO: Adapter finished
+2025-11-11 18:56:28.7567 IST [Bridge CLI] INFO: Using cache directory: /Users/madhusud/bridge-cli-bundle/bridge-cli-bundle-macos_arm
+2025-11-11 18:56:28.7620 IST [Bridge CLI] INFO: Found version "3.0.143" in registry for workflow "blackducksca", trying to load it from local cache
+2025-11-11 18:56:28.8400 IST [Bridge CLI] INFO: Input Resources:
+2025-11-11 18:56:28.8400 IST [Bridge CLI] INFO: resource = value [source]
+2025-11-11 18:56:28.8400 IST [Bridge CLI] INFO: ------------------------------------------------------------
+2025-11-11 18:56:28.8401 IST [Bridge CLI] INFO: blackducksca.token = ***************************************** [blackducksca_input9543467212210574473.json]
+2025-11-11 18:56:28.8401 IST [Bridge CLI] INFO: blackducksca.url = https://saastest.app.blackduck.com [blackducksca_input9543467212210574473.json]
+2025-11-11 18:56:28.8401 IST [Bridge CLI] INFO: blackducksca.waitForScan = true [blackducksca_input9543467212210574473.json]
+2025-11-11 18:56:28.8401 IST [Bridge CLI] INFO: network.airgap = false [blackducksca_input9543467212210574473.json]
+2025-11-11 18:56:28.8401 IST [Bridge CLI] INFO: ------------------------------------------------------------
+2025-11-11 18:56:28.8401 IST [Bridge CLI] INFO: Starting adapters for stage blackducksca
+2025-11-11 18:56:28.8404 IST [Bridge CLI] INFO: Starting Adapter: Blackduck SCA Controller
+2025-11-11 18:56:28.8455 IST [Bridge CLI] INFO: Starting Adapter: Default Black Duck SCA Scan Mode
+2025-11-11 18:56:28.8496 IST [Bridge CLI] INFO: Starting Adapter: Check pull request
+2025-11-11 18:56:28.8749 IST [Check pull request] INFO: Provided value for resource 'environment.scan.pull'
+2025-11-11 18:56:28.8751 IST [Check pull request] INFO: Adapter finished
+2025-11-11 18:56:28.8963 IST [Default Black Duck SCA Scan Mode] INFO: Provided value for resource 'blackducksca.scan.full'
+2025-11-11 18:56:28.8965 IST [Default Black Duck SCA Scan Mode] INFO: Adapter finished
+2025-11-11 18:56:29.7429 IST [Blackduck SCA Controller] INFO: Found Black Duck SCA Detect jar file "detect-11.0.0.jar" in "/Users/madhusud/.blackduck/bridge/tools/blackduck-detect/11.0.0"
+2025-11-11 18:56:29.7484 IST [Blackduck SCA Controller] INFO: Provided value for resource 'detect.execution.path'
+2025-11-11 18:56:29.7485 IST [Bridge CLI] INFO: Starting adapters for stage blackducksca-detect
+2025-11-11 18:56:29.7485 IST [Bridge CLI] INFO: Starting adapters for stage scm
+2025-11-11 18:56:29.7485 IST [Bridge CLI] INFO: Starting adapters for stage blackducksca-post-processing
+2025-11-11 18:56:29.7493 IST [Bridge CLI] INFO: Starting Adapter: Blackduck SCA Results
+2025-11-11 18:56:29.7493 IST [Bridge CLI] INFO: Starting Adapter: Detect Component Locator
+2025-11-11 18:56:29.7493 IST [Bridge CLI] INFO: Starting Adapter: Blackduck SCA Detect Execution
+2025-11-11 18:56:29.7493 IST [Bridge CLI] INFO: Starting Adapter: SCM Checker
+2025-11-11 18:56:29.7495 IST [Blackduck SCA Controller] INFO: Adapter finished
+2025-11-11 18:56:29.8218 IST [Blackduck SCA Detect Execution] INFO: Running command /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java -jar /Users/madhusud/.blackduck/bridge/tools/blackduck-detect/11.0.0/detect-11.0.0.jar --detect.cleanup=false --detect.bdio.file.name=scan --detect.bdio.output.path=/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/bdio/blackduck_artifact --detect.output.path=/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect --blackduck.offline.mode=false --blackduck.url=https://saastest.app.blackduck.com --blackduck.api.token= --detect.wait.for.results=true --detect.blackduck.scan.mode=INTELLIGENT
+2025-11-11 18:56:30.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detect-Self-Updater:  Checking https://saastest.app.blackduck.com/api/tools/detect API for centrally managed Detect version to download to /Users/madhusud/tmp.
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] WARNING: --- Detect-Self-Updater:  Unable to download jar from https://saastest.app.blackduck.com/api/tools/detect.
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] WARNING: --- Detect-Self-Updater:  Response code from https://saastest.app.blackduck.com/api/tools/detect was: 400 Bad Request
+2025-11-11 18:56:33.4817 IST [Blackduck SCA Detect Execution] INFO: ______     _            _
+2025-11-11 18:56:33.4818 IST [Blackduck SCA Detect Execution] INFO: |  _  \   | |          | |
+2025-11-11 18:56:33.4818 IST [Blackduck SCA Detect Execution] INFO: | | | |___| |_ ___  ___| |_
+2025-11-11 18:56:33.4818 IST [Blackduck SCA Detect Execution] INFO: | | | / _ \ __/ _ \/ __| __|
+2025-11-11 18:56:33.4818 IST [Blackduck SCA Detect Execution] INFO: | |/ /  __/ ||  __/ (__| |_
+2025-11-11 18:56:33.4818 IST [Blackduck SCA Detect Execution] INFO: |___/ \___|\__\___|\___|\__|
+2025-11-11 18:56:33.4818 IST [Blackduck SCA Detect Execution] INFO: 
+2025-11-11 18:56:33.5671 IST [Blackduck SCA Detect Execution] INFO: 
+2025-11-11 18:56:33.5672 IST [Blackduck SCA Detect Execution] INFO: Detect Version: 11.0.0
+2025-11-11 18:56:33.5672 IST [Blackduck SCA Detect Execution] INFO: 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Current property values:
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- --property = value [notes]
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ------------------------------------------------------------
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- blackduck.api.token = **************************************************************************************************** [cmd] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- blackduck.offline.mode = false [cmd] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- blackduck.url = https://saastest.app.blackduck.com [cmd] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.bdio.file.name = scan [cmd] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.bdio.output.path = /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/bdio/blackduck_artifact [cmd] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.blackduck.scan.mode = INTELLIGENT [cmd] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.cleanup = false [cmd] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.excluded.directories = /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge [env] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.output.path = /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect [cmd] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.project.name = MBP_Github_BlackduckSca_PR_Comments [env] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- detect.wait.for.results = true [cmd] 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ------------------------------------------------------------
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detect build date: 2025-10-30
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Source directory: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Output directory: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Run directory: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-26-33-559
+2025-11-11 18:56:33.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:56:39.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Successfully connected to Black Duck SCA (version 2025.7.1)!
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Docker tool.
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Docker actions finished.
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Bazel tool.
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Bazel actions finished.
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Detectors tool.
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Searching for detectors.
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Evaluating detectors. This may take a while.
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ======================================================================================================
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detector Report
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ======================================================================================================
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 	/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm (depth 0)
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 		NPM Package Lock: SUCCESS
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 			Found file: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/package-lock.json
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 			Found file: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/package.json
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detectors actions finished.
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Project name: MBP_Github_BlackduckSca_PR_Comments
+2025-11-11 18:56:41.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Project version: 1.3.0
+2025-11-11 18:56:44.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Successfully completed package manager scan of file: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/bdio/blackduck_artifact/scan.bdio
+2025-11-11 18:56:46.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Starting the codelocation file uploads.
+2025-11-11 18:56:50.0000 IST [Blackduck SCA Detect Execution][pool-1-thread-1] INFO: --- Try #1 for task bdio upload (elapsed: 00:00:00.000)...complete!
+2025-11-11 18:56:50.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Completed the codelocation file uploads.
+2025-11-11 18:56:50.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:56:50.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Signature Scanner tool.
+2025-11-11 18:56:54.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- The Black Duck Signature Scanner downloaded/found successfully: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/tools
+2025-11-11 18:56:54.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- No scan targets provided - registering the source path /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm to scan
+2025-11-11 18:56:55.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Starting the Black Duck Signature Scan commands.
+2025-11-11 18:56:55.0000 IST [Blackduck SCA Detect Execution][pool-3-thread-1] INFO: --- Black Duck CLI command: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/tools/Black_Duck_Scan_Installation/scan.cli-1.0.6/jre/Contents/Home/bin/java -Done-jar.silent=true -Done-jar.jar.path=/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/tools/Black_Duck_Scan_Installation/scan.cli-1.0.6/lib/cache/scan.cli.impl-standalone.jar -Xmx4096m -jar /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/tools/Black_Duck_Scan_Installation/scan.cli-1.0.6/lib/scan.cli-1.0.6-standalone.jar --no-prompt --scheme https --host saastest.app.blackduck.com --port 443 -v --logDir /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-26-33-559/scan/BlackDuckScanOutput/2025-11-11_13-26-55-713_1 --statusWriteDir /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-26-33-559/scan/BlackDuckScanOutput/2025-11-11_13-26-55-713_1 --project MBP_Github_BlackduckSca_PR_Comments --release 1.3.0 --name nodejs-npm/MBP_Github_BlackduckSca_PR_Comments/1.3.0 signature --exclude /node_modules/ --exclude /.bridge/ --scass-scan /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][pool-3-thread-1] INFO: --- 
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][pool-3-thread-1] INFO: --- Black Duck Signature Scanner return code: 0
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][pool-3-thread-1] INFO: --- Signature Scanner log output directory: '/Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-26-33-559/scan/BlackDuckScanOutput/2025-11-11_13-26-55-713_1'
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Completed the Black Duck Signature Scan commands.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Signature Scanner actions finished.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Binary Scanner tool.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Binary scanner found nothing to upload.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Binary Scanner actions finished.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Will include the Container Scanner tool.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- No detect.container.scan.file.path property was provided. Skipping container scan.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Container Scanner actions finished.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Vulnerability Impact Analysis tool will not be run.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- IaC Scanner tool will not be run.
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ----------------------------------
+2025-11-11 18:57:05.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #1 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/de90a8d5-569d-45f5-b720-51f716114584 (elapsed: 00:00:00.000)...complete!
+2025-11-11 18:57:06.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #1 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/83fb03a9-1514-4fe1-b0cc-343cceb7596f (elapsed: 00:00:00.000)...not done yet, waiting 1 seconds and trying again...
+2025-11-11 18:57:08.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #2 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/83fb03a9-1514-4fe1-b0cc-343cceb7596f (elapsed: 00:00:01.754)...not done yet, waiting 2 seconds and trying again...
+2025-11-11 18:57:11.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #3 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/83fb03a9-1514-4fe1-b0cc-343cceb7596f (elapsed: 00:00:04.501)...not done yet, waiting 3 seconds and trying again...
+2025-11-11 18:57:14.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Try #4 for task BOM Scan Wait Job https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/bom-status/83fb03a9-1514-4fe1-b0cc-343cceb7596f (elapsed: 00:00:08.247)...complete!
+2025-11-11 18:57:14.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Checking to see if Detect should check policy for violations.
+2025-11-11 18:57:15.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:15.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:15.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Creating status file: /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm/.bridge/blackduck_sca_detect_execution/detect/runs/2025-11-11-13-26-33-559/status/status.json
+2025-11-11 18:57:15.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:15.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Skipping cleanup, it is disabled.
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ======== Detect Result ========
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Black Duck SCA Project BOM: https://saastest.app.blackduck.com/api/projects/38202d46-441b-414e-8d55-f6db06c945a5/versions/3087ad1c-cbf3-43a3-b386-05e9a6f2dd1b/components
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ======== Detect Status ========
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- NPM: SUCCESS
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Signature scan / Snippet scan on /Users/madhusud/Jenkins_Testing/Nodes/workspace/ub_BlackduckSca_PR_Comments_main/nodejs-npm: SUCCESS
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Overall Status: SUCCESS - Detect exited successfully.
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- ===============================
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- 
+2025-11-11 18:57:16.0000 IST [Blackduck SCA Detect Execution][main] INFO: --- Detect duration: 00h 00m 46s 038ms
+2025-11-11 18:57:16.3876 IST [Blackduck SCA Detect Execution] INFO: Provided value for resource 'detect.completed'
+2025-11-11 18:57:16.3877 IST [Blackduck SCA Detect Execution] INFO: Provided value for resource 'detect.results.path'
+2025-11-11 18:57:16.3879 IST [Blackduck SCA Detect Execution] INFO: Adapter finished
+2025-11-11 18:57:16.4223 IST [Blackduck SCA Results] INFO: Skipping Blackduck SCA issues retrieval as "blackducksca.fixpr.enabled" is configured to false
+2025-11-11 18:57:16.4291 IST [Blackduck SCA Results] INFO: Adapter finished
+2025-11-11 18:57:16.4717 IST [SCM Checker] INFO: Provided value for resource 'jenkins.enabled'
+2025-11-11 18:57:16.4717 IST [Bridge CLI] INFO: Starting adapters for stage blackducksca-policy-violations-fetcher
+2025-11-11 18:57:16.4722 IST [Bridge CLI] INFO: Starting Adapter: Blackduck SCA Policy Violations Fetcher
+2025-11-11 18:57:16.4724 IST [SCM Checker] INFO: Adapter finished
+2025-11-11 18:57:16.4952 IST [Detect Component Locator] INFO: skipping fix pull requests creation as "blackducksca.fixpr.enabled" is configured to false
+2025-11-11 18:57:16.5000 IST [Detect Component Locator] INFO: Adapter finished
+2025-11-11 18:57:16.5325 IST [Blackduck SCA Policy Violations Fetcher] INFO: Detected Intelligent scan, will fetch Intelligent scan policy violations data
+2025-11-11 18:57:17.5643 IST [Blackduck SCA Policy Violations Fetcher] INFO: Bearer token retrieved successfully
+2025-11-11 18:57:17.9082 IST [Blackduck SCA Policy Violations Fetcher] INFO: Project data retrieved successfully
+2025-11-11 18:57:18.2762 IST [Blackduck SCA Policy Violations Fetcher] INFO: Version data retrieved successfully
+2025-11-11 18:57:18.6317 IST [Blackduck SCA Policy Violations Fetcher] INFO: Detected 5 policy violations
+2025-11-11 18:57:19.0171 IST [Blackduck SCA Policy Violations Fetcher] INFO: Added entry to resource 'blackducksca.policy.rules.violations'
+2025-11-11 18:57:19.0174 IST [Blackduck SCA Policy Violations Fetcher] INFO: Provided value for resource 'blackducksca.policy.status.issues.minor'
+2025-11-11 18:57:19.0175 IST [Blackduck SCA Policy Violations Fetcher] INFO: Provided value for resource 'blackducksca.policy.status.issues.blocker'
+2025-11-11 18:57:19.0177 IST [Blackduck SCA Policy Violations Fetcher] INFO: Provided value for resource 'blackducksca.policy.status.issues.trivial'
+2025-11-11 18:57:19.0178 IST [Blackduck SCA Policy Violations Fetcher] INFO: Provided value for resource 'blackducksca.policy.status.issues.unspecified'
+2025-11-11 18:57:19.0180 IST [Blackduck SCA Policy Violations Fetcher] INFO: Provided value for resource 'blackducksca.policy.status.issues.major'
+2025-11-11 18:57:19.0182 IST [Blackduck SCA Policy Violations Fetcher] INFO: Provided value for resource 'blackducksca.policy.status.issues.critical'
+2025-11-11 18:57:19.0184 IST [Blackduck SCA Policy Violations Fetcher] INFO: Provided value for resource 'blackducksca.policy.status.issues.ok'
+2025-11-11 18:57:19.0186 IST [Blackduck SCA Policy Violations Fetcher] INFO: Provided value for resource 'blackducksca.projectBomUrl'
+2025-11-11 18:57:19.0190 IST [Blackduck SCA Policy Violations Fetcher] INFO: Adapter finished
 ******************************* END EXECUTION OF BRIDGE CLI *******************************
 [Security Scan] INFO: Retrieving the issue count from the scan results
-[Security Scan] INFO: Issue count not found in output file
+[Security Scan] INFO: Total issues found: 1095
 [Security Scan] INFO: Security Scan execution is successful
 **************************** END EXECUTION OF BLACK DUCK SECURITY SCAN ****************************
 [Pipeline] }
@@ -381,7 +336,7 @@ Configuration: [githubOrg:blackducksca-jenkins-samples, repoName:pr-comments, cr
 [Pipeline] echo
 Job Name: MBP_Github_BlackduckSca_PR_Comments/main
 [Pipeline] echo
-Build Number: 2
+Build Number: 3
 [Pipeline] echo
 GitHub Organization: blackducksca-jenkins-samples
 [Pipeline] withCredentials
